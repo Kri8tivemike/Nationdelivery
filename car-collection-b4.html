@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NationDelivery | Vehicle collection form</title><link rel="shortcut icon" href="images/favicon.ico" />
+  
+   
+    <meta name="msapplication-TileColor" content="#fff2d9" />
+  
+   
+    <meta name="msapplication-TileColor" content="#fff2d9" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/933d6257fcbccb510067.css">
+    <link rel="stylesheet" href="css/cdfc9e891534d9b77d6f.css">
+    <link rel="stylesheet" href="css/daterangepicker.css" /> 
+    <link rel="stylesheet" href="css/styles.css">
+   
+  
+    <style data-href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700">@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZaIGw.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:italic;font-weight:500;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7BymDQ.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqmDQ.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriOZc.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrOBw.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitOBw.woff) format('woff')}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4ET-DJF4e8BH9.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Fp2ywxg089UriCZa4Hz-DJF4e8A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:500;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWB3wT2iv06JOy.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:500;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZaw7ByWCXwT2iv06A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWB3wT2iv06JOy.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Ap2ywxg089UriCZawpBqWCXwT2iv06A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBamC3YU-CnE6Q.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBimC3YU-Ck.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitCBamC3YU-CnE6Q.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitCBimC3YU-Ck.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style><style data-href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap">@font-face{font-family:'Work Sans';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNis.woff) format('woff')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNis.woff) format('woff')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNis.woff) format('woff')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_c6DptfpA4cD3.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Work Sans';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_cqDptfpA4cD3.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Work Sans';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_c6DptfpA4cD3.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_cqDptfpA4cD3.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_c6DptfpA4cD3.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_cqDptfpA4cD3.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/worksans/v17/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+    <style>
+        .callButton {
+       display: -webkit-inline-box;
+       display: -webkit-inline-flex;
+       display: -ms-inline-flexbox;
+       display: inline-flex;
+       -webkit-align-items: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       align-items: center;
+       -webkit-box-pack: center;
+       -webkit-justify-content: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+       background-color: #00CC99;
+       color: #fffaf0;
+       -webkit-transition: all 500ms ease;
+       transition: all 500ms ease;
+       padding: 17px 26px;
+       font-weight: 700;
+       border-radius: 100px;
+   }
+   /*
+   @media (max-width: 1550px) {
+    input {
+       height: 60px;
+      
+       padding-right: 70px;
+   }
+   }
+   input[type= 'text'],  input[type= 'email'], input[type= 'file'], select {
+       width: 100%;
+       
+       background-color: #3333;
+       border-radius: 5px;
+       border: none;
+       outline: none;
+       height: 60px;
+      
+       padding-right: 70px;
+       border-radius: 5px;
+       font-size: 16px;
+       -webkit-letter-spacing: -0.3px;
+       -moz-letter-spacing: -0.3px;
+       -ms-letter-spacing: -0.3px;
+       letter-spacing: -0.3px;
+       color: rgba(0,51,78,0.4);
+       padding-left: 60px;
+       padding-right: 80px;
+       -webkit-transition: all 500ms ease;
+       transition: all 500ms ease;
+   }
+   */
+   .hidden {
+    display: none;
+   }
+   .inputfile{ width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+z-index: -1;}
+/*
+input[type=file]::-webkit-file-upload-button{
+  background-color: #f14634;;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  transition: background .2s ese-in-out;
+  font-size: 14px;
+  
+}
+*/
+
+input[type=file]::file-selector-button{
+  background-color: #f14634;;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  transition: background .2s ese-in-out;
+  font-size: 14px;
+  
+}
+.post h3 a { font-size: 1.3rem; font-weight: 900;}
+a,  button {
+    color: #fff;
+    text-decoration: none;
+}
+ a,  button {
+    color: #fff;
+    /* text-decoration: none; */
+}
+@media screen and (min-width: 1184px){
+button {
+    font-size: 16px;
+}
+}
+button {
+    letter-spacing: 0;
+    font-size: 16px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+button, select {
+    text-transform: none;
+}
+   </style>
+</head>
+<body>
+  <div id="__next"><div class="foodDeliverystyle__ContentWrapper-sc-1b5u16p-0 breqjk">
+    <div class="sticky-outer-wrapper " style="height: 0px;"  >
+      <div class="sticky-inner-wrapper " style="position: fixed; z-index: 9999; transform: translate3d(0px, 0px, 0px); top: 0px; width: 100%;">
+          <nav class="navbarstyle__NavbarStyle-sc-xr53f9-0 dRhBXe reusecore__navbar food_delivery_navbar" display="block" style=" background-color: #990000;">
+              <div class="style__ContainerWrapper-sc-1vvwqhe-0 hzZpZk container">
+                  <div width="100%" class="Box__BoxWrapper-sc-h6r1fp-0 kUTSuZ">
+                      <a href="/" class="Link__LinkWrapper-sc-1n8mv3p-0 fdjCoW main-logo" display="inline-flex" >
+                          <img src="images/logo.png" alt="Agency" class="Image__ImageWrapper-sc-1lwf601-0 eKuVtK" ></a>
+                          <div class="Box__BoxWrapper-sc-h6r1fp-0 bROSeG mainMenuWrapper" style="position: relative;">
+                              <ul class="scrollspy__menu main_menu menu-bar">
+                                  
+                                      <li>
+                                        <a
+                                          class="nav-link dropdown-btn"
+                                          data-dropdown="dropdown1"
+                                          aria-haspopup="true"
+                                          aria-expanded="false"
+                                          aria-label="browse"
+                                        >
+                                          Vehicle Shipping
+                                          <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                                            <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg>
+                                      </a>
+                                        <div id="dropdown1" class="dropdown">
+                                          <ul role="menu">
+                                            <li role="menuitem">
+                                              <a class="dropdown-link" href="vehile-shipping.html">
+                                                
+                                                <div>
+                                                  <span class="dropdown-link-title"
+                                                    >Vehicle Shipping</span
+                                                  >
+                                                  
+                                                </div>
+                                              </a>
+                                            </li>
+                                            <li role="menuitem">
+                                              <a class="dropdown-link" href="car-shipping.html">
+                                                
+                                                <div>
+                                                  <span class="dropdown-link-title"
+                                                    >Car Shipping</span
+                                                  >
+                                                  
+                                                </div>
+                                              </a>
+                                            </li>
+                                            <li role="menuitem">
+                                              <a class="dropdown-link" href="trucking-and-aircargo.html">
+                                                
+                                                <div>
+                                                  <span class="dropdown-link-title"
+                                                    >Motobike Shipping</span
+                                                  >
+                                                  
+                                                </div>
+                                              </a>
+                                            </li>
+                                            <li role="menuitem">
+                                              <a class="dropdown-link" href="trucking-and-aircargo.html">
+                                                
+                                                <div>
+                                                  <span class="dropdown-link-title"
+                                                    >Truck  Shipping</span
+                                                  >
+                                                  
+                                                </div>
+                                              </a>
+                                            </li>
+                                            <li role="menuitem">
+                                              <a class="dropdown-link" href="trucking-and-aircargo.html">
+                                                
+                                                <div>
+                                                  <span class="dropdown-link-title"
+                                                    >Motorhome and Van Shipping</span
+                                                  >
+                                                  
+                                                </div>
+                                              </a>
+                                            </li>
+                                            
+                                           
+                                          </ul>
+                        
+                                         
+                                        </div>
+                                      </li>
+                                 
+                                  <li class="">
+                                    <a
+                                          class="nav-link dropdown-btn"
+                                          data-dropdown="dropdownitem"
+                                          aria-haspopup="true"
+                                          aria-expanded="false"
+                                          aria-label="browse"
+                                        >
+                                        Item shipping
+                                          <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                                            <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg>
+                                      </a>
+                                      <div id="dropdownitem" class="dropdown">
+                                        <ul role="menu">
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="item-shipping.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >General Goods Shipping</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="item-shipping.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >General products</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="item-shipping.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Personal Care products</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="item-shipping.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Commercial products</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                     
+                                         
+                                        </ul>
+                      
+                                       
+                                      </div>
+                                  
+                                  
+                                  </li>
+                                  <li class="">
+                                    <a
+                                    class="nav-link dropdown-btn"
+                                    data-dropdown="dropdownprocurement"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="browse"
+                                  >
+                                  Procurement
+                                    <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                                      <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span>
+                                </a>
+                                <div id="dropdownprocurement" class="dropdown">
+                                  <ul role="menu">
+                                    <li role="menuitem">
+                                      <a class="dropdown-link" href="procurement.html">
+                                        
+                                        <div>
+                                          <span class="dropdown-link-title"
+                                            >Procurement for Online Purchase</span
+                                          >
+                                          
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li role="menuitem">
+                                      <a class="dropdown-link" href="procurement.html">
+                                        
+                                        <div>
+                                          <span class="dropdown-link-title"
+                                            >Procurement for Offline Purchase</span
+                                          >
+                                          
+                                        </div>
+                                      </a>
+                                    </li>
+                           
+                               
+                                   
+                                  </ul>
+                
+                                 
+                                </div>
+                                  </li>
+                                  <li class="">
+                                    <a
+                                        class="nav-link dropdown-btn"
+                                        data-dropdown="dropdownsend"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        aria-label="browse"
+                                      >
+                                      Items you can send
+                                      <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                                        <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span>
+                                    </a>
+                                    
+                                    <div id="dropdownsend" class="dropdown">
+                                      <ul role="menu">
+                                        <li role="menuitem">
+                                          <a class="dropdown-link" href="what-can-you-send.html">
+                                            
+                                            <div>
+                                              <span class="dropdown-link-title"
+                                                >Car</span
+                                              >
+                                              
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Bike</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                      
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Electronic</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Fridge</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Furnitures</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Perfumes</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Lotions and creams</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >All households</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Cameras</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Phones</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Computers</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Documents</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Clothings</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Bags</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Shoes</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Books</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="what-can-you-send.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Wall Decorations</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                        </div>
+                                  </li>
+                                  <li>
+                                      <a
+                                        class="nav-link dropdown-btn"
+                                        data-dropdown="dropdownwarehouse"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        aria-label="browse"
+                                      >
+                                      Warehouse and Storage
+                                      <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                                        <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span>
+                                   
+                                    </a>
+                                      
+                                    <div id="dropdownwarehouse" class="dropdown">
+                                      <ul role="menu">
+                                        <li role="menuitem">
+                                          <a class="dropdown-link" href="warehouse-and-storage.html">
+                                            
+                                            <div>
+                                              <span class="dropdown-link-title"
+                                                >Warehouse and storage</span
+                                              >
+                                              
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li role="menuitem">
+                                            <a class="dropdown-link" href="warehouse-and-packaging.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Warehouse and Packaging</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                      
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="fulfillment-centers.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Fulfilment Center</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                          
+                                          <li role="menuitem">
+                                            <a class="dropdown-link" href="warehouse-and-storage.html">
+                                              
+                                              <div>
+                                                <span class="dropdown-link-title"
+                                                  >Storage Removal</span
+                                                >
+                                                
+                                              </div>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                        </div>
+                                          </li>
+                                  
+                                 
+                                 
+                                  <!--
+                                       <li class=""><a href="#restaurants">Shipping countries</a></li> 
+                                       <li class=""><a href="#banner_section">What you can send</a></li>
+                                  <li class=""><a href="#restaurants">Explore more service</a></li> 
+                                   <li class=""><a href="#restaurants">Contact us</a></li> 
+                         
+                                  
+                                  -->
+                                 
+                              
+                              </ul>
+                              <a class="navbar_button dropdown-btn" data-dropdown="dropdowncountry"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              aria-label="browse" style="position: relative;">
+                               
+                                  <span class="btn-text" style="font-weight: 700; font-size: 14px;">Shipping countries </span> <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                                  <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span> 
+                               </a>
+                                  <div id="dropdowncountry" class="dropdown" style="position: absolute; right: 0;">
+                                  <ul role="menu" >
+                                    <li role="menuitem">
+                                      <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                        
+                                        <div>
+                                          <span class="dropdown-link-title"
+                                            >Nigeria</span
+                                          >
+                                          
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li role="menuitem">
+                                      <a class="dropdown-link"  style="color:white!important" a href="shipping-countries.html#shipping-country">
+                                        
+                                        <div>
+                                          <span class="dropdown-link-title"
+                                            >UK</span
+                                          >
+                                          
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >USA</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                  
+                                      <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >Pakistan</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                      
+                                      <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >India</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >Australia</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >Bangladesh</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >Anywhere in Europe</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li role="menuitem">
+                                        <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html#shipping-country">
+                                          
+                                          <div>
+                                            <span class="dropdown-link-title"
+                                              >Others</span
+                                            >
+                                            
+                                          </div>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                    
+                                    </div>
+                              </li>
+                          
+                           
+                            </ul>
+                            </div>
+                          
+                            
+                              <a class="navbar_button_two" href="get-quote.html">
+
+                                <button type="button" class="buttonstyle__ButtonStyle-sc-13ebl9m-0 iGDZa-D reusecore__button" style="padding: 20px; border-radius: 4px;" font-size="16px" font-weight="600" color="white" height="1"><span class="btn-text">Get Quote</span></button>
+                              </a>
+                                      <div class="reusecore-drawer__handler" style="display:inline-block" role="button" tabindex="0">
+                                          <button id="hamburger" style=" font-weight: 700; border: 1px solid white;
+                                          background: transparent;
+                                         
+                                         
+                                          display: flex;
+                                          justify-content: space-between;
+                                          align-items: center;
+                                          padding:4px 12px ;
+                                          height: 44px;
+                                          cursor: pointer;"  class="hamburgMenustyle__HamburgMenuWrapper-sc-1gdj0m7-0  hamburgMenu__bar  " aria-label="hamburgMenu" ><div class="bdoLZe"><span></span><span></span><span></span></div><p style="font-size: 16px;">Get Started</p> </button>
+                                      </div></div></div></div>
+                                  </nav></div></div>
+      <section id="banner_section" class="bannerstyle__BannerWrapper-sc-dd5743-0 eIzMbK">
+          <div class="style__ContainerWrapper-sc-1vvwqhe-0 hzZpZk container" style="gap: 50px;">
+              <div class="Box__BoxWrapper-sc-h6r1fp-0 content">
+                <h2 font-weight="bold" class="Heading__HeadingWrapper-sc-1r264sz-0 iFUPHC" style="text-align: left; margin-left:  0; margin-right: 0;">Vehicle shipping collection booking form for shipping to another country </h2>
+              
+                
+                    
+                  
+             
+                     <!--
+                     <p class="Text__TextWrapper-sc-1vevv34-0 hGRInH tagLine">Apps Available to download on</p>
+                     -->
+                     
+                     <div class="Box__BoxWrapper-sc-h6r1fp-0 buttonWrap" style="justify-content: start;">
+                      <a class="bannerAppBtn " href="contact-us.html"  style="background-color: #081C27; color: #fff; cursor: pointer;">
+          <div class="" ><p class="Text__TextWrapper-sc-1vevv34-0 hGRInH">Schedule meeting  </p></div></a>
+          <a class="bannerAppBtn" href="contact-us.html"  style="background-color: #081C27; color: #fff; cursor: pointer; "><div class="">
+            <p class="Text__TextWrapper-sc-1vevv34-0 hGRInH">Contact us now</p></div></a>
+          </div>
+        
+     
+          </div>
+        
+   
+        
+        </div></section>
+                 
+                    <section class="productDeliverystyle__ProductDeliveryWrapper-sc-2h0mgm-0 eQAbGa" style="padding-bottom: 0;" >
+                        <div class="style__ContainerWrapper-sc-1vvwqhe-0 hzZpZk container" style="display: block;">
+                        
+                                     
+                                                            
+                                      
+                                                            <div class="Box__BoxWrapper-sc-h6r1fp-0 content " style="padding-top: 40px;">
+                                                                <h2 font-weight="bold" class="Heading__HeadingWrapper-sc-1r264sz-0 iFUPHC">Vehicle Collection Form</h2>
+                                                           
+                                                        
+<div class="booking-form">
+                                                            <form id="vehicleform" method="post">
+                                                              <fieldset>
+                                                                <legend style="font-size: 18px;font-weight: 700; border-bottom: none; margin-bottom: 0; padding: 10px  0;">Shipper personal/owner details</legend>
+                                                                  
+                                                              <div class="row no-margin">
+                                                                <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                <span class="form-label">Your First name</span>
+                                                             
+                                                                  <input class="form-control" type="text" placeholder=" Your First name">
+                                                                </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                <span class="form-label">Surname</span>
+                                                                <input class="form-control" type="text" placeholder="Surname">
+                                                               
+                                                                </div>
+                                                                </div>
+                                                                </div>
+  
+                                                                <div class="row no-margin">
+                                                                  <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Email address </span>
+                                                               
+                                                                    <input class="form-control" type="email" placeholder="Email address">
+                                                                  </div>
+                                                                  </div>
+                                                                  <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Confirm Email address</span>
+                                                                  <input class="form-control" type="email" placeholder="Confirm email address">
+                                                                 
+                                                                  </div>
+                                                                  </div>
+                                                                  </div>
+                                                                  <div class="row no-margin">
+                                                                    <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                    <span class="form-label">Phone number</span>
+                                                                 
+                                                                      <input class="form-control" type="tel" placeholder="Phone number">
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                    <span class="form-label">Confirm phone</span>
+                                                                    <input class="form-control" type="text" placeholder="confirm phone number">
+                                                                   
+                                                                    </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                      <span class="form-label">Your country</span>
+                                                                      <select  class="form-control" required="" style=" border-bottom:  1px solid #dddee9;">
+                                                                      <option value="" selected="" hidden="">Select country</option>
+                                                                      <option value="Nigeria">Nigeria</option><option value="Ghana">Ghana</option><option value="UK">UK</option><option value="Afghanistan">Afghanistan</option><option value="Angola">Angola</option><option value="Albania">Albania</option><option value="United Arab Emirates">United Arab Emirates</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Burundi">Burundi</option><option value="Belgium">Belgium</option><option value="Benin">Benin</option><option value="Burkina Faso">Burkina Faso</option><option value="Bangladesh">Bangladesh</option><option value="Bulgaria">Bulgaria</option><option value="Bahrain">Bahrain</option><option value="Bahamas">Bahamas</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Belarus">Belarus</option><option value="Belize">Belize</option><option value="Bermuda">Bermuda</option><option value="Bolivia">Bolivia</option><option value="Barbados">Barbados</option><option value="Brazil">Brazil</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Bhutan">Bhutan</option><option value="Botswana">Botswana</option><option value="Canada">Canada</option><option value="Central African Republic">Central African Republic</option><option value="Chile">Chile</option><option value="CÃ´te d'Ivoire">CÃ´te d'Ivoire</option><option value="Cameroon">Cameroon</option><option value="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</option><option value="Congo">Congo</option><option value="Cook Islands">Cook Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Costa Rica">Costa Rica</option><option value="Cuba">Cuba</option><option value="Cayman Islands">Cayman Islands</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Denmark">Denmark</option><option value="Dominican Republic">Dominican Republic</option><option value="Algeria">Algeria</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="Eritrea">Eritrea</option><option value="Spain">Spain</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Finland">Finland</option><option value="Fiji">Fiji</option><option value="Micronesia, Federated States of">Micronesia, Federated States of</option><option value="Gabon">Gabon</option><option value="Georgia">Georgia</option>
+                                                                              <option value="Guinea">Guinea</option><option value="Gambia">Gambia</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Greece">Greece</option><option value="Grenada">Grenada</option><option value="Guatemala">Guatemala</option><option value="Guam">Guam</option><option value="Guyana">Guyana</option><option value="Hong Kong">Hong Kong</option><option value="Honduras">Honduras</option><option value="Croatia">Croatia</option><option value="Haiti">Haiti</option><option value="Hungary">Hungary</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option><option value="Iraq">Iraq</option><option value="Iceland">Iceland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Jordan">Jordan</option><option value="Japan">Japan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Cambodia">Cambodia</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Korea, Republic of">Korea, Republic of</option><option value="Kuwait">Kuwait</option><option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option><option value="Lebanon">Lebanon</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Saint Lucia">Saint Lucia</option><option value="Liechtenstein">Liechtenstein</option><option value="Sri Lanka">Sri Lanka</option><option value="Lesotho">Lesotho</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Latvia">Latvia</option><option value="Morocco">Morocco</option><option value="Monaco">Monaco</option><option value="Moldova, Republic of">Moldova, Republic of</option><option value="Madagascar">Madagascar</option><option value="Maldives">Maldives</option><option value="Mexico">Mexico</option><option value="Marshall Islands">Marshall Islands</option><option value="Macedonia, the former Yugoslav Republic of">Macedonia, the former Yugoslav Republic of</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Myanmar">Myanmar</option><option value="Montenegro">Montenegro</option><option value="Mongolia">Mongolia</option><option value="Mozambique">Mozambique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Namibia">Namibia</option><option value="Niger">Niger</option><option value="Nicaragua">Nicaragua</option><option value="Norway">Norway</option><option value="Nepal">Nepal</option><option value="New Zealand">New Zealand</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Panama">Panama</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Paraguay">Paraguay</option><option value="Palestine, State of">Palestine, State of</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Rwanda">Rwanda</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Sudan">Sudan</option><option value="Senegal">Senegal</option><option value="Solomon Islands">Solomon Islands</option><option value="Sierra Leone">Sierra Leone</option><option value="El Salvador">El Salvador</option><option value="San Marino">San Marino</option><option value="Somalia">Somalia</option><option value="Serbia">Serbia</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Suriname">Suriname</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Sweden">Sweden</option><option value="Swaziland">Swaziland</option><option value="Seychelles">Seychelles</option><option value="Syrian Arab Republic">Syrian Arab Republic</option><option value="Chad">Chad</option><option value="Togo">Togo</option><option value="Thailand">Thailand</option><option value="Tajikistan">Tajikistan</option><option value="Turkmenistan">Turkmenistan</option><option value="Timor-Leste">Timor-Leste</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Taiwan, Province of China">Taiwan, Province of China</option><option value="Tanzania, United Republic of">Tanzania, United Republic of</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="Uruguay">Uruguay</option><option value="United States">United States</option><option value="Uzbekistan">Uzbekistan</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option><option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option value="Viet Nam">Viet Nam</option><option value="Yemen">Yemen</option><option value="South Africa">South Africa</option>
+                                                                         
+                                                                      </select>
+                                                                      <span class="select-arrow"></span>
+                                                                      </div>
+                                                                    <!-- End of Shipper Personal details   -->
+                                                                   
+                                                                    <div class="form-control" style=" border-bottom:  1px solid #dddee9!important" >
+                                                                     
+                                                                     
+                                                                        <label  class="check-inline" style="font-size: 14px; color: #f14634;
+                                                                        font-weight: 400;
+                                                                      line-height: 14px;
+                                                                        font-style: italic;">  <input   type="checkbox" name="someone" id="someone"  value="yes"> Are you shipping for someone ?</label>
+                                                                      
+                                                                   
+                                                                     
+                                                                    </div>
+                                                                    <div id="shipper" class="hidden">
+                                                                      <div class="row no-margin">
+                                                                        <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                        <span class="form-label">First name</span>
+                                                                     
+                                                                          <input class="form-control" type="text" placeholder="First name">
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                        <span class="form-label">Last name</span>
+                                                                        <input class="form-control" type="text" placeholder="Last name">
+                                                                       
+                                                                        </div>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="row no-margin">
+                                                                          <div class="col-sm-6">
+                                                                          <div class="form-group">
+                                                                          <span class="form-label">Phone number</span>
+                                                                       
+                                                                            <input class="form-control" type="tel" placeholder="Phone number">
+                                                                          </div>
+                                                                          </div>
+                                                                          <div class="col-sm-6">
+                                                                          <div class="form-group">
+                                                                          <span class="form-label">Confirm phone</span>
+                                                                          <input class="form-control" type="tel" placeholder="confirm phone number">
+                                                                         
+                                                                          </div>
+                                                                          </div>
+                                                                          </div>
+                                                                          <div class="row no-margin">
+                                                                            <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                            <span class="form-label">Address</span>
+                                                                         
+                                                                              <input class="form-control" type="text" placeholder="Address">
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                            <span class="form-label">Post code</span>
+                                                                            <input class="form-control" type="text" placeholder="post code">
+                                                                           
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                      <div class="form-group">
+                                                                        <span class="form-label">Your country</span>
+                                                                        <select  class="form-control" required="" style=" border-bottom:  1px solid #dddee9;">
+                                                                        <option value="" selected="" hidden="">Select country</option>
+                                                                        <option value="Nigeria">Nigeria</option><option value="Ghana">Ghana</option><option value="UK">UK</option><option value="Afghanistan">Afghanistan</option><option value="Angola">Angola</option><option value="Albania">Albania</option><option value="United Arab Emirates">United Arab Emirates</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Burundi">Burundi</option><option value="Belgium">Belgium</option><option value="Benin">Benin</option><option value="Burkina Faso">Burkina Faso</option><option value="Bangladesh">Bangladesh</option><option value="Bulgaria">Bulgaria</option><option value="Bahrain">Bahrain</option><option value="Bahamas">Bahamas</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Belarus">Belarus</option><option value="Belize">Belize</option><option value="Bermuda">Bermuda</option><option value="Bolivia">Bolivia</option><option value="Barbados">Barbados</option><option value="Brazil">Brazil</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Bhutan">Bhutan</option><option value="Botswana">Botswana</option><option value="Canada">Canada</option><option value="Central African Republic">Central African Republic</option><option value="Chile">Chile</option><option value="CÃ´te d'Ivoire">CÃ´te d'Ivoire</option><option value="Cameroon">Cameroon</option><option value="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</option><option value="Congo">Congo</option><option value="Cook Islands">Cook Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Costa Rica">Costa Rica</option><option value="Cuba">Cuba</option><option value="Cayman Islands">Cayman Islands</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Denmark">Denmark</option><option value="Dominican Republic">Dominican Republic</option><option value="Algeria">Algeria</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="Eritrea">Eritrea</option><option value="Spain">Spain</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Finland">Finland</option><option value="Fiji">Fiji</option><option value="Micronesia, Federated States of">Micronesia, Federated States of</option><option value="Gabon">Gabon</option><option value="Georgia">Georgia</option>
+                                                                                <option value="Guinea">Guinea</option><option value="Gambia">Gambia</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Greece">Greece</option><option value="Grenada">Grenada</option><option value="Guatemala">Guatemala</option><option value="Guam">Guam</option><option value="Guyana">Guyana</option><option value="Hong Kong">Hong Kong</option><option value="Honduras">Honduras</option><option value="Croatia">Croatia</option><option value="Haiti">Haiti</option><option value="Hungary">Hungary</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option><option value="Iraq">Iraq</option><option value="Iceland">Iceland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Jordan">Jordan</option><option value="Japan">Japan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Cambodia">Cambodia</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Korea, Republic of">Korea, Republic of</option><option value="Kuwait">Kuwait</option><option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option><option value="Lebanon">Lebanon</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Saint Lucia">Saint Lucia</option><option value="Liechtenstein">Liechtenstein</option><option value="Sri Lanka">Sri Lanka</option><option value="Lesotho">Lesotho</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Latvia">Latvia</option><option value="Morocco">Morocco</option><option value="Monaco">Monaco</option><option value="Moldova, Republic of">Moldova, Republic of</option><option value="Madagascar">Madagascar</option><option value="Maldives">Maldives</option><option value="Mexico">Mexico</option><option value="Marshall Islands">Marshall Islands</option><option value="Macedonia, the former Yugoslav Republic of">Macedonia, the former Yugoslav Republic of</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Myanmar">Myanmar</option><option value="Montenegro">Montenegro</option><option value="Mongolia">Mongolia</option><option value="Mozambique">Mozambique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Namibia">Namibia</option><option value="Niger">Niger</option><option value="Nicaragua">Nicaragua</option><option value="Norway">Norway</option><option value="Nepal">Nepal</option><option value="New Zealand">New Zealand</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Panama">Panama</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Paraguay">Paraguay</option><option value="Palestine, State of">Palestine, State of</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Rwanda">Rwanda</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Sudan">Sudan</option><option value="Senegal">Senegal</option><option value="Solomon Islands">Solomon Islands</option><option value="Sierra Leone">Sierra Leone</option><option value="El Salvador">El Salvador</option><option value="San Marino">San Marino</option><option value="Somalia">Somalia</option><option value="Serbia">Serbia</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Suriname">Suriname</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Sweden">Sweden</option><option value="Swaziland">Swaziland</option><option value="Seychelles">Seychelles</option><option value="Syrian Arab Republic">Syrian Arab Republic</option><option value="Chad">Chad</option><option value="Togo">Togo</option><option value="Thailand">Thailand</option><option value="Tajikistan">Tajikistan</option><option value="Turkmenistan">Turkmenistan</option><option value="Timor-Leste">Timor-Leste</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Taiwan, Province of China">Taiwan, Province of China</option><option value="Tanzania, United Republic of">Tanzania, United Republic of</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="Uruguay">Uruguay</option><option value="United States">United States</option><option value="Uzbekistan">Uzbekistan</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option><option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option value="Viet Nam">Viet Nam</option><option value="Yemen">Yemen</option><option value="South Africa">South Africa</option>
+                                                                           
+                                                                        </select>
+                                                                        <span class="select-arrow"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- End Shipping for someone-->
+                                                                    </fieldset>
+                                                             <fieldset>
+                                                              <legend style="font-size: 18px;font-weight: 700; border-bottom: none; margin-bottom: 0; padding: 10px  0;">Vehicle Details</legend>
+                                                             
+                                                              <div class="row no-margin">
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">What are you shipping?</span>
+                                                                  <input class="form-control" type="text" required="" placeholder="What are you shipping?">
+                                                                  </div>
+                                                                  </div>
+                                                             
+
+                                                              <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                <span class="form-label">Type of vehicle</span>
+                                                                <select  class="form-control" required="">
+                                                                  <option value="" selected="" hidden="">Select type of vehicle</option>
+                                                                  <option value="Car/Auto">Car/Auto</option>
+                                                                  <option value="4x4">4x4</option>
+                                                                  <option value="SUV">SUV</option>
+                                                                  <option value="Truck">Truck</option>
+                                                                  <option value="Van-Passenger">Van-Passenger</option>
+                                                                  <option value="Van-Utility">Van-Utility</option>
+                                                                  <option value="Motorbike">Motorbike</option>
+                                                                  <option value="Motorhome">Motorhome</option>
+                                                                  <option value="Boat">Boat</option>
+                                                                  <option value="Caravan">Caravan</option>
+                                                                  <option value="Something Else">Something else</option>
+                                                                  </select>
+                                                                  <span class="select-arrow"></span>
+                                                                </div>
+                                                                </div>
+                                                              </div>
+                                                              <div class="row no-margin">
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Vehicle Registration Number*</span>
+                                                                  <input class="form-control" type="text" required="" placeholder="Vehicle Registration NUmber">
+                                                                  </div>
+                                                                  </div>
+                                                              <div class="col-sm-6">
+                                                              <div class="form-group">
+                                                              <span class="form-label">Vehicle Make/Model</span>
+                                                              <input class="form-control" type="text" required="" placeholder="Vehicle Make/Model">
+                                                              </div>
+                                                              </div>
+                                                              </div>
+                                                              <div class="row no-margin">
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Vehicle Length/Width & Height (If Known)</span>
+                                                                  <input class="form-control" type="text"  placeholder="Vehicle Length/WIdth & Height">
+                                                                  </div>
+                                                                  </div>
+                                                                  <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                    <span class="form-label">Vehicle color</span>
+                                                                    <input class="form-control" type="text" required="" placeholder="Vehicle model">
+                                                                    </div>
+                                                                    </div>
+                                                             
+                                                              </div>
+                                                              <div class="row no-margin">
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Vehicle Chassis or Vin No. (Located under the bonnet) *</span>
+                                                                  <input class="form-control" type="text" required="" placeholder="Vehicle chassis or Vin No.">
+                                                                  </div>
+                                                                  </div>
+                                                              
+                                                              <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                <span class="form-label">Vehicle Value</span>
+                                                                <input class="form-control" type="text" required="" placeholder="Vehicle Value">
+                                                                </div>
+                                                                </div>
+                                                              </div>
+                                                              </fieldset>
+                                                              <!-- End of Vehicle Details-->
+                                                              <div class="form-group">
+                                                                <span class="form-label">Vehicle collection/PIck up date for shipping</span>
+                                                                <input class="form-control" type="text" id="collectiondate" required="" placeholder="Pick up date">
+                                                                </div>
+                                                              <div class="form-control"  style="padding: 15px 25px;">
+                                                                <span class="form-labe" style="
+                                                                display: block;
+                                                                color: #f14634;
+                                                                font-weight: 400;
+                                                              line-height: 14px;
+                                                                font-style: italic;
+                                                                height: 24px;
+                                                                font-size: 14px;">Does the vehicle start and run ?</span>
+                                                                <div style="margin-top: 15px;">
+                                                                  <label  class="radio-inline" style="font-size: 16px;">  <input  type="radio" name="collect" checked> No</label>
+                                                                  <label  class="radio-inline" style="font-size: 16px;">  <input  type="radio" name="collect"> Yes</label>
+                                                                </div>
+                                                               
+                                                              </div>
+                                                              <div class="form-control"  style="padding: 15px 25px;">
+                                                                <span class="form-labe" style="
+                                                                display: block;
+                                                                color: #f14634;
+                                                                font-weight: 400;
+                                                              line-height: 14px;
+                                                                font-style: italic;
+                                                                height: 24px;
+                                                                font-size: 14px;">Do you require the car to be collected for shipping(country the vehicle is shipping to)?</span>
+                                                                <div style="margin-top: 15px;">
+                                                                  <label  class="radio-inline" style="font-size: 16px;">  <input  type="radio" name="collect" checked> No</label>
+                                                                  <label  class="radio-inline" style="font-size: 16px;">  <input  type="radio" name="collect"> Yes</label>
+                                                                </div>
+                                                               
+                                                              </div>
+                                                              <div class="row no-margin">
+                                                                <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                <span class="form-label">Preferred date for vehicle to be collected from your address for shippment</span>
+                                                             
+                                                                  <input class="form-control" type="text" id="preferreddate" placeholder="preferred date">
+                                                                </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                    <span class="form-label">Preferred Time</span>
+                                                                    <select  class="form-control " required="" >
+                                                                   
+                                                                   <option value="7|0">7:00 a.m.</option><option value="7|15">7:15 a.m.</option><option value="7|30">7:30 a.m.</option><option value="7|45">7:45 a.m.</option><option value="8|0">8:00 a.m.</option><option value="8|15">8:15 a.m.</option><option value="8|30">8:30 a.m.</option><option value="8|45">8:45 a.m.</option><option value="9|0">9:00 a.m.</option><option value="9|15">9:15 a.m.</option><option value="9|30">9:30 a.m.</option><option value="9|45">9:45 a.m.</option><option value="10|0">10:00 a.m.</option><option value="10|15">10:15 a.m.</option><option value="10|30">10:30 a.m.</option><option value="10|45">10:45 a.m.</option><option value="11|0">11:00 a.m.</option><option value="11|15">11:15 a.m.</option><option value="11|30">11:30 a.m.</option><option value="11|45">11:45 a.m.</option><option value="12|0">12:00 p.m.</option><option value="12|15">12:15 p.m.</option><option value="12|30">12:30 p.m.</option><option value="12|45">12:45 p.m.</option><option value="13|0">1:00 p.m.</option><option value="13|15">1:15 p.m.</option><option value="13|30">1:30 p.m.</option><option value="13|45">1:45 p.m.</option><option value="14|0">2:00 p.m.</option><option value="14|15">2:15 p.m.</option><option value="14|30">2:30 p.m.</option><option value="14|45">2:45 p.m.</option><option value="15|0">3:00 p.m.</option><option value="15|15">3:15 p.m.</option><option value="15|30">3:30 p.m.</option><option value="15|45">3:45 p.m.</option><option value="16|0">4:00 p.m.</option><option value="16|15">4:15 p.m.</option><option value="16|30">4:30 p.m.</option><option value="16|45">4:45 p.m.</option><option value="17|0">5:00 p.m.</option><option value="17|15">5:15 p.m.</option><option value="17|30">5:30 p.m.</option><option value="17|45">5:45 p.m.</option><option value="18|0">6:00 p.m.</option><option value="18|15">6:15 p.m.</option><option value="18|30">6:30 p.m.</option><option value="18|45">6:45 p.m.</option><option value="19|0">7:00 p.m.</option><option value="19|15">7:15 p.m.</option><option value="19|30">7:30 p.m.</option><option value="19|45">7:45 p.m.</option><option value="20|0">8:00 p.m.</option><option value="20|15">8:15 p.m.</option><option value="20|30">8:30 p.m.</option><option value="20|45">8:45 p.m.</option><option value="21|0">9:00 p.m.</option><option value="21|15">9:15 p.m.</option><option value="21|30">9:30 p.m.</option><option value="21|45">9:45 p.m.</option><option value="22|0">10:00 p.m.</option><option value="22|15">10:15 p.m.</option><option value="22|30">10:30 p.m.</option><option value="22|45">10:45 p.m.</option><option value="23|0">11:00 p.m.</option><option value="23|15">11:15 p.m.</option><option value="23|30">11:30 p.m.</option><option value="23|45">11:45 p.m.</option><option value="0|0">12:00 a.m.</option><option value="0|15">12:15 a.m.</option><option value="0|30">12:30 a.m.</option><option value="0|45">12:45 a.m.</option><option value="1|0">1:00 a.m.</option><option value="1|15">1:15 a.m.</option><option value="1|30">1:30 a.m.</option><option value="1|45">1:45 a.m.</option><option value="2|0">2:00 a.m.</option><option value="2|15">2:15 a.m.</option><option value="2|30">2:30 a.m.</option><option value="2|45">2:45 a.m.</option><option value="3|0">3:00 a.m.</option><option value="3|15">3:15 a.m.</option><option value="3|30">3:30 a.m.</option><option value="3|45">3:45 a.m.</option><option value="4|0">4:00 a.m.</option><option value="4|15">4:15 a.m.</option><option value="4|30">4:30 a.m.</option><option value="4|45">4:45 a.m.</option><option value="5|0">5:00 a.m.</option><option value="5|15">5:15 a.m.</option><option value="5|30">5:30 a.m.</option><option value="5|45">5:45 a.m.</option><option value="6|0">6:00 a.m.</option><option value="6|15">6:15 a.m.</option><option value="6|30">6:30 a.m.</option><option value="6|45">6:45 a.m.</option>
+                                                                    </select>
+                                                                    <span class="select-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <span class="form-label">Note</span>
+                                                                  <textarea class="form-control" style="height: 200px; border-bottom:  1px solid #dddee9; " rows="5" placeholder="If we are collecting/ picking up your vehicle, please ensure there is enough fuel to reach UK port or depot. Any refuelling or additional petrol required will be charged at cost."></textarea>
+                                                            
+                                                                </div>
+                                                                <fieldset>
+                                                                  <legend style="font-size: 18px;font-weight: 700; border-bottom: none; margin-bottom: 0; padding: 10px  0;">Vehicle delivery and country destination<br> <span style="font-size: 16px; font-weight: 500; font-style: italic;">The details of the person collecting the vehicle in another country</span></legend>
+                                                                 
+                                                                <div class="form-group">
+                                                                  <span class="form-label">Country the vehicle is shipping to</span>
+                                                                  <select  class="form-control selectcountry" required="" id="selectcountry" >
+                                                                  <option value="" selected="" >Select country</option>
+                                                                  <option value="Nigeria">Nigeria</option><option value="Ghana">Ghana</option><option value="UK">UK</option><option value="Afghanistan">Afghanistan</option><option value="Angola">Angola</option><option value="Albania">Albania</option><option value="United Arab Emirates">United Arab Emirates</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Burundi">Burundi</option><option value="Belgium">Belgium</option><option value="Benin">Benin</option><option value="Burkina Faso">Burkina Faso</option><option value="Bangladesh">Bangladesh</option><option value="Bulgaria">Bulgaria</option><option value="Bahrain">Bahrain</option><option value="Bahamas">Bahamas</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Belarus">Belarus</option><option value="Belize">Belize</option><option value="Bermuda">Bermuda</option><option value="Bolivia">Bolivia</option><option value="Barbados">Barbados</option><option value="Brazil">Brazil</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Bhutan">Bhutan</option><option value="Botswana">Botswana</option><option value="Canada">Canada</option><option value="Central African Republic">Central African Republic</option><option value="Chile">Chile</option><option value="CÃ´te d'Ivoire">CÃ´te d'Ivoire</option><option value="Cameroon">Cameroon</option><option value="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</option><option value="Congo">Congo</option><option value="Cook Islands">Cook Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Costa Rica">Costa Rica</option><option value="Cuba">Cuba</option><option value="Cayman Islands">Cayman Islands</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Denmark">Denmark</option><option value="Dominican Republic">Dominican Republic</option><option value="Algeria">Algeria</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="Eritrea">Eritrea</option><option value="Spain">Spain</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Finland">Finland</option><option value="Fiji">Fiji</option><option value="Micronesia, Federated States of">Micronesia, Federated States of</option><option value="Gabon">Gabon</option><option value="Georgia">Georgia</option>
+                                                                          <option value="Guinea">Guinea</option><option value="Gambia">Gambia</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Greece">Greece</option><option value="Grenada">Grenada</option><option value="Guatemala">Guatemala</option><option value="Guam">Guam</option><option value="Guyana">Guyana</option><option value="Hong Kong">Hong Kong</option><option value="Honduras">Honduras</option><option value="Croatia">Croatia</option><option value="Haiti">Haiti</option><option value="Hungary">Hungary</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option><option value="Iraq">Iraq</option><option value="Iceland">Iceland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Jordan">Jordan</option><option value="Japan">Japan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Cambodia">Cambodia</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Korea, Republic of">Korea, Republic of</option><option value="Kuwait">Kuwait</option><option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option><option value="Lebanon">Lebanon</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Saint Lucia">Saint Lucia</option><option value="Liechtenstein">Liechtenstein</option><option value="Sri Lanka">Sri Lanka</option><option value="Lesotho">Lesotho</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Latvia">Latvia</option><option value="Morocco">Morocco</option><option value="Monaco">Monaco</option><option value="Moldova, Republic of">Moldova, Republic of</option><option value="Madagascar">Madagascar</option><option value="Maldives">Maldives</option><option value="Mexico">Mexico</option><option value="Marshall Islands">Marshall Islands</option><option value="Macedonia, the former Yugoslav Republic of">Macedonia, the former Yugoslav Republic of</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Myanmar">Myanmar</option><option value="Montenegro">Montenegro</option><option value="Mongolia">Mongolia</option><option value="Mozambique">Mozambique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Namibia">Namibia</option><option value="Niger">Niger</option><option value="Nicaragua">Nicaragua</option><option value="Norway">Norway</option><option value="Nepal">Nepal</option><option value="New Zealand">New Zealand</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Panama">Panama</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Paraguay">Paraguay</option><option value="Palestine, State of">Palestine, State of</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Rwanda">Rwanda</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Sudan">Sudan</option><option value="Senegal">Senegal</option><option value="Solomon Islands">Solomon Islands</option><option value="Sierra Leone">Sierra Leone</option><option value="El Salvador">El Salvador</option><option value="San Marino">San Marino</option><option value="Somalia">Somalia</option><option value="Serbia">Serbia</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Suriname">Suriname</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Sweden">Sweden</option><option value="Swaziland">Swaziland</option><option value="Seychelles">Seychelles</option><option value="Syrian Arab Republic">Syrian Arab Republic</option><option value="Chad">Chad</option><option value="Togo">Togo</option><option value="Thailand">Thailand</option><option value="Tajikistan">Tajikistan</option><option value="Turkmenistan">Turkmenistan</option><option value="Timor-Leste">Timor-Leste</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Taiwan, Province of China">Taiwan, Province of China</option><option value="Tanzania, United Republic of">Tanzania, United Republic of</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="Uruguay">Uruguay</option><option value="United States">United States</option><option value="Uzbekistan">Uzbekistan</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option><option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option value="Viet Nam">Viet Nam</option><option value="Yemen">Yemen</option><option value="South Africa">South Africa</option>
+                                                                     
+                                                                  </select>
+                                                                  <span class="select-arrow"></span>
+                                                                  </div>
+                                                                  <div class="form-group">
+                                                                    <span class="form-label">Destination port</span>
+                                                                 
+                                                                      <input class="form-control" style=" border-bottom:  1px solid #dddee9;" type="text" placeholder="Destination port">
+                                                                    </div>
+                                                              <!-- Nigeria country-->
+                                                              <div class="nigeria hidden">
+                                                                <div class="row no-margin">
+                                                                  <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">First Name of the collection Person</span>
+                                                               
+                                                                    <input class="form-control" type="text" placeholder="First name">
+                                                                  </div>
+                                                                  </div>
+                                                                  <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Surname of the collection Person</span>
+                                                                  <input class="form-control" type="text" placeholder="Surname">
+                                                                 
+                                                                  </div>
+                                                                  </div>
+                                                                  </div>
+                                                                <div class="form-group">
+                                                                  <span class="form-label">Collection person State</span>
+                                                                  <input class="form-control" type="text" placeholder="State">
+                                                                  </div>
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Collection person State City</span>
+                                                                  <input class="form-control" type="text" placeholder="city">
+                                                                  </div>
+                                                                
+                                                                  <div class="form-group">
+                                                                  <span class="form-label">Collection person House Address</span>
+                                                                  <input class="form-control" type="text" placeholder="House Address">
+                                                                  </div>
+                                                                  <div class="form-group">
+                                                                    <span class="form-label">Collection person address Landmark</span>
+                                                                    <input class="form-control" type="text" placeholder="Address Landmark">
+                                                                    </div>
+                                                                  
+                                                                    <div class="form-group">
+                                                                      <span class="form-label">Collection person email address</span>
+                                                                      <input class="form-control" type="email" placeholder="Email address">
+                                                                      </div>
+                                                                      <div class="row no-margin">
+                                                                        <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                        <span class="form-label">Phone number at vehicle collection</span>
+                                                                     
+                                                                          <input class="form-control" type="tel" placeholder="Phone number">
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                        <span class="form-label">Confirm phone</span>
+                                                                        <input class="form-control" type="text" placeholder="confirm phone number">
+                                                                       
+                                                                        </div>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="row no-margin">
+                                                                          <div class="col-sm-6">
+                                                                          <div class="form-group">
+                                                                          <span class="form-label">Collection Date</span>
+                                                                       
+                                                                            <input class="form-control" type="text" id="collectdate" placeholder="collection date">
+                                                                          </div>
+                                                                          </div>
+                                                                          <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                              <span class="form-label">C0llection Time</span>
+                                                                              <select  class="form-control " required="" >
+                                                                             
+                                                                             <option value="7|0">7:00 a.m.</option><option value="7|15">7:15 a.m.</option><option value="7|30">7:30 a.m.</option><option value="7|45">7:45 a.m.</option><option value="8|0">8:00 a.m.</option><option value="8|15">8:15 a.m.</option><option value="8|30">8:30 a.m.</option><option value="8|45">8:45 a.m.</option><option value="9|0">9:00 a.m.</option><option value="9|15">9:15 a.m.</option><option value="9|30">9:30 a.m.</option><option value="9|45">9:45 a.m.</option><option value="10|0">10:00 a.m.</option><option value="10|15">10:15 a.m.</option><option value="10|30">10:30 a.m.</option><option value="10|45">10:45 a.m.</option><option value="11|0">11:00 a.m.</option><option value="11|15">11:15 a.m.</option><option value="11|30">11:30 a.m.</option><option value="11|45">11:45 a.m.</option><option value="12|0">12:00 p.m.</option><option value="12|15">12:15 p.m.</option><option value="12|30">12:30 p.m.</option><option value="12|45">12:45 p.m.</option><option value="13|0">1:00 p.m.</option><option value="13|15">1:15 p.m.</option><option value="13|30">1:30 p.m.</option><option value="13|45">1:45 p.m.</option><option value="14|0">2:00 p.m.</option><option value="14|15">2:15 p.m.</option><option value="14|30">2:30 p.m.</option><option value="14|45">2:45 p.m.</option><option value="15|0">3:00 p.m.</option><option value="15|15">3:15 p.m.</option><option value="15|30">3:30 p.m.</option><option value="15|45">3:45 p.m.</option><option value="16|0">4:00 p.m.</option><option value="16|15">4:15 p.m.</option><option value="16|30">4:30 p.m.</option><option value="16|45">4:45 p.m.</option><option value="17|0">5:00 p.m.</option><option value="17|15">5:15 p.m.</option><option value="17|30">5:30 p.m.</option><option value="17|45">5:45 p.m.</option><option value="18|0">6:00 p.m.</option><option value="18|15">6:15 p.m.</option><option value="18|30">6:30 p.m.</option><option value="18|45">6:45 p.m.</option><option value="19|0">7:00 p.m.</option><option value="19|15">7:15 p.m.</option><option value="19|30">7:30 p.m.</option><option value="19|45">7:45 p.m.</option><option value="20|0">8:00 p.m.</option><option value="20|15">8:15 p.m.</option><option value="20|30">8:30 p.m.</option><option value="20|45">8:45 p.m.</option><option value="21|0">9:00 p.m.</option><option value="21|15">9:15 p.m.</option><option value="21|30">9:30 p.m.</option><option value="21|45">9:45 p.m.</option><option value="22|0">10:00 p.m.</option><option value="22|15">10:15 p.m.</option><option value="22|30">10:30 p.m.</option><option value="22|45">10:45 p.m.</option><option value="23|0">11:00 p.m.</option><option value="23|15">11:15 p.m.</option><option value="23|30">11:30 p.m.</option><option value="23|45">11:45 p.m.</option><option value="0|0">12:00 a.m.</option><option value="0|15">12:15 a.m.</option><option value="0|30">12:30 a.m.</option><option value="0|45">12:45 a.m.</option><option value="1|0">1:00 a.m.</option><option value="1|15">1:15 a.m.</option><option value="1|30">1:30 a.m.</option><option value="1|45">1:45 a.m.</option><option value="2|0">2:00 a.m.</option><option value="2|15">2:15 a.m.</option><option value="2|30">2:30 a.m.</option><option value="2|45">2:45 a.m.</option><option value="3|0">3:00 a.m.</option><option value="3|15">3:15 a.m.</option><option value="3|30">3:30 a.m.</option><option value="3|45">3:45 a.m.</option><option value="4|0">4:00 a.m.</option><option value="4|15">4:15 a.m.</option><option value="4|30">4:30 a.m.</option><option value="4|45">4:45 a.m.</option><option value="5|0">5:00 a.m.</option><option value="5|15">5:15 a.m.</option><option value="5|30">5:30 a.m.</option><option value="5|45">5:45 a.m.</option><option value="6|0">6:00 a.m.</option><option value="6|15">6:15 a.m.</option><option value="6|30">6:30 a.m.</option><option value="6|45">6:45 a.m.</option>
+                                                                              </select>
+                                                                              <span class="select-arrow"></span>
+                                                                              </div>
+                                                                          </div>
+                                                                          </div>
+
+                                                                          <div class="form-group">
+                                                                            <span class="form-label">Note</span>
+                                                                            <textarea class="form-control" style="height: 200px; border-bottom:  1px solid #dddee9; " rows="5" placeholder="Add a note"></textarea>
+                                                                      
+                                                                          </div>
+                                                              </div>
+                                                              <!-- End of Nigeria-->
+
+                                                                   <!-- Other country-->
+                                                                   <div class="other hidden">
+                                                                    
+                                                                      <div class="form-group">
+                                                                        <span class="form-label">Shipping from country city</span>
+                                                                        <input class="form-control" type="text" placeholder=" Country city">
+                                                                        </div>
+                                                                      <div class="form-group">
+                                                                      <span class="form-label">Shipping from country House Address</span>
+                                                                      <input class="form-control" type="text" placeholder=" Country House Address">
+                                                                      </div>
+                                                                      <div class="form-group">
+                                                                        <span class="form-label">Shipping from country House Number</span>
+                                                                        <input class="form-control" type="text" placeholder=" Country House Number">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                        <span class="form-label">Shipping from Post code address</span>
+                                                                        <input class="form-control" type="text" placeholder="Enter Post code">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                          <span class="form-label">Shipping from address Landmark</span>
+                                                                          <input class="form-control" type="text" placeholder="Landmark">
+                                                                          </div>
+                                                                          <div class="form-group">
+                                                                            <span class="form-label">Note</span>
+                                                                            <textarea class="form-control" style="height: 200px; border-bottom:  1px solid #dddee9; " rows="5" placeholder="Add a note"></textarea>
+                                                                      
+                                                                          </div>
+                                                                  </div>
+
+                                                              </fieldset>
+                                                                  <!-- End of other-->
+
+                                                                  
+                                                                 
+                                                                 
+                                                           
+
+                                                                  <div class="checkbox">
+                                                                    <label >
+                                                                      <input type="checkbox">I agree to the Terms and condtions.
+                                                                    </label>
+                                                                    <span><a href="terms-and-conditions.html" style="color: #081C27; cursor: pointer ; text-decoration: underline;"><br>Our Terms and conditions</a></span>
+                                                                  </div>
+                                                                
+                                                              <span class="wpcf7-form-control-wrap recaptcha" data-name="recaptcha"><span data-sitekey="6Ld0XMQnAAAAALmxN7sbxrdME6_fw0Pqgs66p1kR" class="wpcf7-form-control wpcf7-recaptcha g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-vemf6uslemm" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld0XMQnAAAAALmxN7sbxrdME6_fw0Pqgs66p1kR&amp;co=aHR0cHM6Ly93d3cuc2hpcGNhcnMuY28udWs6NDQz&amp;hl=en-GB&amp;v=QoukH5jSO3sKFzVEA7Vc8VgC&amp;size=normal&amp;cb=afwntq8nut6g"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></span> <noscript> <div class="grecaptcha-noscript"> <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Ld0XMQnAAAAALmxN7sbxrdME6_fw0Pqgs66p1kR" frameborder="0" scrolling="no" width="310" height="430"> </iframe> <textarea name="g-recaptcha-response" rows="3" cols="40" placeholder="reCaptcha Response Here"> </textarea> </div> </noscript> </span>
+                                                              <div class="form-btn">
+                                                              <button class="submit-btn" type="submit">Get quote now</button>
+                                                              </div>
+                                                              </form>
+                                                              </div>
+                                                              </div>
+                                                                             
+
+                                                                
+                                                           
+                                   
+                            </div></section>
+                            
+                          
+                                    
+    
+
+     
+                            <footer class="footerstyle__FooterWrapper-sc-14lyfa0-0 lajrWY"  >
+  
+                              <div class="style__ContainerWrapper-sc-1vvwqhe-0 hzZpZk container" style="align-items: start; flex-wrap: nowrap; gap: 20px;
+                              
+                              -webkit-flex-wrap: nowrap !important;; 
+                              -ms-flex-wrap: nowrap;
+                             " >
+                                <div class=" " style="flex-direction: column; gap: 10px; ">
+                                 
+                                    <div >
+                                      <p class="Text__TextWrapper-sc-1vevv34-0 hGRInH">Copyright © 2024 NaionDelivery | Company No. 15022649 </p>  
+                                      <p class="Text__TextWrapper-sc-1vevv34-0 hGRInH">All Rights Reserved  Registered in England and Wales Registration </p>
+                                      <p class="Text__TextWrapper-sc-1vevv34-0 hGRInH">  Registered in Nigeria RC: 1038133</p> </div>
+                                      <a href="/" class="Link__LinkWrapper-sc-1n8mv3p-0 fdjCoW main-logo" display="inline-flex"  style="padding: 8px; border-radius: 10px; border: 0;  background-color: #990000;">
+                                        <img src="images/logo.png" alt="Agency" class="Image__ImageWrapper-sc-1lwf601-0 eKuVtK" ></a>
+                                    </div>
+                                   
+                                    <style>
+                                      .footerMenus a{ color: black;}
+                                      .footerMenus ul li {
+                                        margin-bottom: 10px;
+                                      }
+                                    </style>
+                                      <div class="footerMenus"  style="padding:0 10px;" ><a href="/" style="margin-bottom: 20px; display: block; font-weight: 800; font-size: 1.4rem;">Our services</a>
+                                        <ul class="scrollspy__menu main_menu menu-bar">
+                                                                    
+                                          
+                                           
+                                           
+                                     
+                                      <li class=""><a href="vehile-shipping.html">Vehicle shipping</a></li>
+                                      <li class=""><a href="door-to-door.html">Door to Door AirCargo from UK to Nigeria and anywhere in the world</a>
+                                      </li>
+                                      <li class=""><a href="freight-frowading.html">Air Cargo</a></li>
+                                      <li class=""><a href="container-loading.html">Container loading</a></li>
+                                      <li class=""><a href="sea-cargo.html">Sea cargo</a></li>
+                                      <li class=""><a href="trucking-and-aircargo.html">Trucking & Air cargo</a></li>
+                                      <li class=""><a href="international-courier-service.html">Express Courier Services</a></li>
+                                      <li class=""><a href="global-import.html">Global Imports</a></li>
+                                      <li class=""><a href="warehouse-and-packaging.html">Warehouse, Storage and Packaging</a></li>
+                                      <li class=""><a href="packer-and-mover.html">Packers and Movers Service</a></li>
+                                      <li class=""><a href="warehouse-and-storage.html">Warehouse and Storage</a></li>
+                                      <li class=""><a href="barrel-shipping.html">Barrel shipping</a></li>
+                                      <li class=""><a href="what-can-you-send.html">What you can send</a></li>
+                                      <li class=""><a href="what-you-should-not-send.html">What you should not send</a></li>
+                                      
+                                  
+                                      
+                                     
+                                     
+                                     
+                                     
+                                  
+                                  </ul>
+                                       </div>
+                                       <div class="footerMenus" style="padding:0 10px;" ><a href="/" style="margin-bottom: 20px; font-size: 1.4rem; display: block; font-weight: 800;">Support</a>
+                                        <ul class="scrollspy__menu main_menu menu-bar">
+                                                                    
+                                          
+                                           
+                                           
+                                     
+                                      <li class=""><a href="about-us.html">About us</a></li>
+                                      <li class=""><a href="privacy.html">Privacy policy</a>
+                                      </li>
+                                      <li class=""><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                      <li class=""><a href="faq.html">Our FAQ on Shipping of Cargo</a></li>
+                                      <li class=""><a href="faq-for-car-shipping.html">Our FAQ on Shipping of Car and Vehicle</a></li>
+                                      <li class=""><a href="get-quote.html">Get parcel quote</a></li>
+                                      <li class=""><a href="get-quote.html">Get vehicle quote</a></li>
+                                      <li class=""><a href="parcel-collection.html">Parcel collection </a></li>
+                                      <li class=""><a href="car-collection.html">Vehicle collection </a></li>
+                                    
+                                      
+                                  
+                                      
+                                     
+                                     
+                                     
+                                     
+                                  
+                                  </ul>
+                                       </div>
+                                      
+                                      
+                                      <div class="footerMenus" style="flex-direction: column; gap: 10px; padding:0 10px;">
+                                        <a href="/" style="margin-bottom: 20px; display: block; font-weight: 800; font-size: 1.4rem;">Get in touch</a>
+                                        <ul class="scrollspy__menu main_menu menu-bar">
+                                                                    
+                                          
+                                           
+                                           
+                                     
+                                          <li class="">  <a href="info@nationdelivery.co.uk" style="color: black;">info@nationdelivery.co.uk</a></li>
+                                          <li class=""> <a href="/"  style="color: black;">Uk : 07496970165</a>
+                                          </li>
+                                          <li class=""> <a href="/"  style="color: black;">Nigeria : 0909900250</a>
+                                          </li>
+                                          <li class=""> <a href="/"  style="color: black;"><b>Nigeria address</b> <Address>16 Adeshina street off awolowo way ikeja Lagos</Address>  </a></li>
+                                          <li class=""> <a href="/"  style="color: black;"><b>UK address</b> <Address></Address>  </a></li>
+                                          <li class=""> <a href="contact-us.html"  style="color: black; cursor: pointer;"><b>Contact us</b>  </a></li>
+                                      
+                                          
+                                         
+                                         
+                                         
+                                         
+                                      
+                                      </ul>
+                                      
+                                        
+                                       </div>
+                            
+                            
+                                      </div></footer>
+          
+          
+          </div>
+
+       <!--
+<div class="style__DemoSwitcherWrapper-sc-1w8besc-0 dxsbAL">
+    <button type="button" class="buttonstyle__ButtonStyle-sc-13ebl9m-0 enbKjO reusecore__button">
+        <span class="btn-text">Demos</span></button></div>
+    -->
+    <div tabindex="-1" style="display: none;"  class="drawer drawer-right drawer-open reusecore__drawer">
+      <div class="drawer-mask"></div>
+      <div class="drawer-content-wrapper" style="width: 420px;">
+          <div class="drawer-content">
+              <div class="reusecore-drawer__close" role="button" tabindex="0"></div>
+              
+                  <ul class="scrollspy__menu mobile_menu menu-bar" style="display: relative
+                  ;">
+                              
+                      <li>
+                        <a
+                          class="nav-link dropdown-btn"
+                          data-dropdown="dropdown3"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-label="browse"
+                        >
+                          Vehicle Shipping
+                          <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                            <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg>
+                    
+                      </a>
+                        <div id="dropdown3" class="dropdown">
+                          <ul role="menu">
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="vehile-shipping.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Vehicle Shipping</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="car-shipping.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Car Shipping</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="trucking-and-aircargo.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Motobike Shipping</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="trucking-and-aircargo.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Truck  Shipping</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="trucking-and-aircargo.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Motorhome and Van Shipping</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="commercial-freight.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Commercial Shipping</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                           
+                          </ul>
+        
+                         
+                        </div>
+                      </li>
+                 
+                
+                  <li class="">
+                    <a
+                          class="nav-link dropdown-btn"
+                          data-dropdown="dropdownitem1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-label="browse"
+                        >
+                        Item shipping
+                          <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                            <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg>
+                      </a>
+                      <div id="dropdownitem1" class="dropdown">
+                        <ul role="menu">
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="item-shipping.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >General Goods Shipping</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="item-shipping.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >General products</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="item-shipping.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >Personal Care products</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="item-shipping.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >Commercial products</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                     
+                         
+                        </ul>
+      
+                       
+                      </div>
+                  
+                  
+                  </li>
+                
+                 
+                        
+                  
+                 
+                  <li class="">
+                    <a
+                          class="nav-link dropdown-btn"
+                          data-dropdown="dropdowncountry1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-label="browse"
+                        >
+                        Shipping countries
+                          <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                            <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg>
+                      </a>
+                  
+                       
+                           <div id="dropdowncountry1" class="dropdown">
+                           <ul role="menu" >
+                             <li role="menuitem">
+                               <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                 
+                                 <div>
+                                   <span class="dropdown-link-title"
+                                     >Nigeria</span
+                                   >
+                                   
+                                 </div>
+                               </a>
+                             </li>
+                             <li role="menuitem">
+                               <a class="dropdown-link"  style="color:white!important" a href="shipping-countries.html">
+                                 
+                                 <div>
+                                   <span class="dropdown-link-title"
+                                     >UK</span
+                                   >
+                                   
+                                 </div>
+                               </a>
+                             </li>
+                             <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >USA</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                           
+                               <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >Pakistan</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                               
+                               <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >India</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                               <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >Australia</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                               <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >Bangladesh</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                               <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >Anywhere in Europe</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                               <li role="menuitem">
+                                 <a class="dropdown-link"  style="color:white!important" href="shipping-countries.html">
+                                   
+                                   <div>
+                                     <span class="dropdown-link-title"
+                                       >Others</span
+                                     >
+                                     
+                                   </div>
+                                 </a>
+                               </li>
+                             </ul>
+                             
+                             </div>
+                     
+                    </li>
+                    <li class="">
+                      <a
+                      class="nav-link dropdown-btn"
+                      data-dropdown="dropdownprocurement1"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-label="browse"
+                    >
+                    Procurement
+                      <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                        <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span>
+                  </a>
+                  <div id="dropdownprocurement1" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="procurement.html">
+                          
+                          <div>
+                            <span class="dropdown-link-title"
+                              >Procurement for Online Purchase</span
+                            >
+                            
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="procurement.html">
+                          
+                          <div>
+                            <span class="dropdown-link-title"
+                              >Procurement for Offline Purchase</span
+                            >
+                            
+                          </div>
+                        </a>
+                      </li>
+             
+                 
+                     
+                    </ul>
+  
+                   
+                  </div>
+                    </li>
+                    <li class="">
+                      <a
+                          class="nav-link dropdown-btn"
+                          data-dropdown="dropdownsend1"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-label="browse"
+                        >
+                        Items you can send
+                        <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                          <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span>
+                      </a>
+                      
+                      <div id="dropdownsend1" class="dropdown">
+                        <ul role="menu">
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="what-can-you-send.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >Car</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                          <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Bike</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                        
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Electronic</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Fridge</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Furnitures</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Perfumes</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Lotions and creams</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >All households</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Cameras</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Phones</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Computers</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Documents</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Clothings</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Bags</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Shoes</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Books</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="what-can-you-send.html">
+                                
+                                <div>
+                                  <span class="dropdown-link-title"
+                                    >Wall Decorations</span
+                                  >
+                                  
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                          </div>
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link dropdown-btn"
+                        data-dropdown="dropdownwarehouse1"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-label="browse"
+                      >
+                      Warehouse and Storage
+                      <span style="margin-left: 5px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="css-1aa3m7p">
+                        <path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"></path></svg></span>
+                   
+                    </a>
+                      
+                    <div id="dropdownwarehouse1" class="dropdown">
+                      <ul role="menu">
+                        <li role="menuitem">
+                          <a class="dropdown-link" href="warehouse-and-storage.html">
+                            
+                            <div>
+                              <span class="dropdown-link-title"
+                                >Warehouse and storage</span
+                              >
+                              
+                            </div>
+                          </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="dropdown-link" href="warehouse-and-packaging.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >Warehouse and Packaging</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                      
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="fulfillment-centers.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >Fulfilment Center</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                          
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="warehouse-and-storage.html">
+                              
+                              <div>
+                                <span class="dropdown-link-title"
+                                  >Storage Removal</span
+                                >
+                                
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                          </li>
+                   <li class=""><a href="contact-us.html">Contact us</a></li> 
+                  <li> <a class="navbar_button_two" href="get-quote.html">
+                    <button type="button" class="buttonstyle__ButtonStyle-sc-13ebl9m-0 iGDZa-D reusecore__button" font-size="13px" font-weight="600" color="white" height="1"><span class="btn-text">Get price quote</span></button></a></li>
+                     
+                  
+          
+                 
+              
+              </ul>
+               
+              
+              
+              </div></div></div>
+              <script src="js/jquery.js"></script>
+              <script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+              <script src="js/main.js"></script>
+          </body>
+</html>

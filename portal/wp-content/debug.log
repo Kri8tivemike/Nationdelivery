@@ -1,0 +1,57 @@
+[31-May-2024 08:53:07 UTC] Mapped JetEngine Data: Array
+(
+    [package_type] => Document
+    [packaging_type] => Unpacked Item
+    [country_the_parcel_is_shipping_to] => Anguilla
+    [weight_of_the_item] => 2kg-5kg
+    [quantity_of_package] => 4 parcel
+    [come_and_collect] => yes
+    [first_name] => my 
+    [last_name] => Joseph
+    [email_address] => michaeljoseph841@gmail.com
+    [confirm_email_address] => michaeljoseph841@gmail.com
+    [telephone_number] => 08147953648
+    [confirm_phone] => 08147953648
+    [picture_of_the_parcel] => 
+    [add_note] => 
+)
+
+[31-May-2024 08:53:07 UTC] JetEngine CCT instance not found.
+[31-May-2024 08:54:04 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 08:54:04 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 14:46:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wpdb.php on line 1987
+[31-May-2024 14:47:12 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\update.php on line 211
+[31-May-2024 14:47:12 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\update.php on line 211
+[31-May-2024 15:06:24 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:24 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:38 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:38 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:42 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:42 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:46 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:46 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:57 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[31-May-2024 15:06:57 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 03:40:10 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wpdb.php on line 1987
+[01-Jun-2024 03:46:24 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wpdb.php on line 1987
+[01-Jun-2024 04:27:08 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 04:29:17 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 04:30:31 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:08:43 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:08:43 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:11:43 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:11:43 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:11:43 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:12:47 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:12:47 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 05:12:47 UTC] PHP Warning:  Undefined array key "meta_field" in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\jet-engine\includes\components\post-types\admin-columns.php on line 226
+[01-Jun-2024 07:38:33 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\astra-sites\admin\bsf-analytics\class-bsf-analytics-stats.php on line 71
+[01-Jun-2024 08:32:17 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 08:32:17 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 08:32:26 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 08:32:26 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 08:33:00 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 08:33:00 UTC] PHP Warning:  Undefined property: stdClass::$plugin in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wp-list-util.php on line 168
+[01-Jun-2024 18:24:46 UTC] Cron reschedule event error for hook: fluentform_do_scheduled_tasks, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"ff_every_five_minutes","args":[],"interval":300}
+[02-Jun-2024 07:37:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\PC\Local Sites\nd-portal\app\public\wp-includes\class-wpdb.php on line 1987
+[02-Jun-2024 12:37:37 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\PC\Local Sites\nd-portal\app\public\wp-content\plugins\fluentformpro\src\Components\Post\JetEngineHelper.php on line 169
