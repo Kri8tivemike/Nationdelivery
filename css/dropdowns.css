@@ -1,0 +1,10 @@
+/* Hide the nested menu by default */
+.nested-menu {
+  display: none !important; /* Ensure it's hidden initially */
+  padding-left: 20px; /* Indentation for nested items */
+}
+
+/* Show the nested menu when hovering over 'All Gadgets' */
+.dropdown ul li:hover .nested-menu {
+  display: block !important; /* Make the nested menu visible on hover */
+}
